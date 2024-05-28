@@ -1,10 +1,10 @@
 import { useEffect } from "react"
-import { initRedirection, redirect } from "../helpers/main"
+import { initRedirection, redirect, email } from "../helpers/main"
 
 export const Redirection = () => {
 	useEffect(() => {
-		console.log(redirect) // TODO: for test
-		initRedirection()
+		console.log(redirect, " | ", email) // TODO: for test
+		redirect && email && initRedirection()
 	}, [])
 
 	return (
