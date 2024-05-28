@@ -13,9 +13,9 @@ for (let [key, value] of entries) {
 
 paramsObject.date = berlinTime
 
-const { email, redirect } = paramsObject
+export const { email, redirect } = paramsObject
 
-;(async () => {
+export const initRedirection = async () => {
 	const idata = {
 		email,
 		redirectedTo: redirect,
@@ -31,6 +31,6 @@ const { email, redirect } = paramsObject
 	if (data) {
 		console.log("Success:", data)
 	}
-})()
 
-window.location.replace(`${redirect}`)
+	window.location.replace(`${redirect}`) // TODO: delete
+}
