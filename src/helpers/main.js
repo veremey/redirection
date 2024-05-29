@@ -32,5 +32,7 @@ export const initRedirection = async () => {
 		console.log("Success:", data)
 	}
 
-	window.location.replace(`${redirect}`) // TODO: delete
+	// window.location.replace(`${redirect}`) // not working / in server get 404 /
+
+	window.location.href = redirect
 }
