@@ -3,8 +3,7 @@ import { initRedirection, redirect, email } from "../helpers/main"
 
 export const Redirection = () => {
 	useEffect(() => {
-		console.log(redirect, " | ", email) // TODO: for test
-		redirect && email && initRedirection()
+		redirect && email && initRedirection().then(window.location.replace(redirect))
 	}, [])
 
 	return (
