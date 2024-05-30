@@ -1,0 +1,20 @@
+{
+    "name": "redirect/test",
+    "description": "email redirection",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Redirect\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "veremey",
+            "email": "veremey4uk@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
